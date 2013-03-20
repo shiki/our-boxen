@@ -34,6 +34,9 @@ github "sudo",     "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "java", "1.0.6"
+github "wget", "1.0.0"
+
 github "dropbox", "1.1.0"
 github "firefox", "1.0.3"
 github "cyberduck", "1.0.0"

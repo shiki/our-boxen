@@ -1,5 +1,8 @@
 
 class fufulabs {
+  include java
+  include wget
+
   include dropbox
   include firefox
   include cyberduck
