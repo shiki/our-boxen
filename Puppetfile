@@ -33,3 +33,23 @@ github "sudo",     "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "dropbox", "1.1.0"
+github "firefox", "1.0.3"
+github "cyberduck", "1.0.0"
+github "appcleaner", "1.0.0"
+github "chrome", "1.1.0"
+github "slate", "1.0.0"
+github "fluid", "1.0.0"
+github "sublime_text_2", "1.1.0"
+github "virtualbox", "1.0.1"
+github "iterm2", "1.0.1"
+github "macvim", "1.0.0"
+github "keepassx", "1.0.0"
+
+#github "alfred", "1.0.1"
+#github "transmission", "1.0.0"
+#github "handbrake", "1.0.0"
+
+
+
