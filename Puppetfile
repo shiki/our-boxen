@@ -49,8 +49,8 @@ github "virtualbox", "1.0.1"
 github "iterm2", "1.0.1"
 github "macvim", "1.0.0"
 github "keepassx", "1.0.0"
+github "alfred", "1.0.1"
 
-#github "alfred", "1.0.1"
 #github "transmission", "1.0.0"
 #github "handbrake", "1.0.0"
 

@@ -16,8 +16,8 @@ class fufulabs {
   include macvim
   include sublime_text_2
   include keepassx
+  include alfred
 
-  #include alfred
   #include transmission
   #include handbrake
 
@@ -29,5 +29,16 @@ class fufulabs {
   package { 'Skype_FuFu':
     provider => 'appdmg',
     source => 'http://download.skype.com/macosx/Skype_6.3.59.582.dmg'
+  }
+
+  # https://github.com/all9lives/puppet-skitch
+  package { 'Skitch':
+    provider => 'compressed_app',
+    source   => 'http://cdn1.evernote.com/skitch/mac/release/Skitch-2.0.5.zip'
+  }
+
+  package { 'Unarchiver': 
+    provider => 'compressed_app',
+    source   => 'http://theunarchiver.googlecode.com/files/TheUnarchiver3.6.1.zip'
   }
 }
