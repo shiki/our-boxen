@@ -52,14 +52,18 @@ github "iterm2", "1.0.1"
 github "macvim", "1.0.0"
 github "keepassx", "1.0.0"
 github "alfred", "1.0.1"
+github "caffeine", "1.0.0"
 
 github "nginx", "1.1.0"
 github "memcached", "1.2.0"
 github "redis", "1.0.0"
 github "mysql", "1.0.0"
+github "heroku", "1.0.0"
 
 github "transmission", "1.0.0"
 github "handbrake", "1.0.0"
+github "vlc", "1.0.0"
+github "flux", "0.0.1"
 
 
 

@@ -14,6 +14,11 @@ GITHUBTARBALL
     boxen (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-chrome
   specs:
     chrome (1.1.0)
@@ -44,6 +49,11 @@ GITHUBTARBALL
     fluid (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-flux
+  specs:
+    flux (0.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (1.0.0)
@@ -57,6 +67,11 @@ GITHUBTARBALL
   remote: boxen/puppet-handbrake
   specs:
     handbrake (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -154,6 +169,11 @@ GITHUBTARBALL
     virtualbox (1.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
@@ -177,15 +197,18 @@ DEPENDENCIES
   alfred (= 1.0.1)
   appcleaner (= 1.0.0)
   boxen (= 1.2.0)
+  caffeine (= 1.0.0)
   chrome (= 1.1.0)
   cyberduck (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
   firefox (= 1.0.3)
   fluid (= 1.0.0)
+  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.0.0)
   handbrake (= 1.0.0)
+  heroku (= 1.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
   inifile (= 0.9.0)
@@ -208,6 +231,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   transmission (= 1.0.0)
   virtualbox (= 1.0.1)
+  vlc (= 1.0.0)
   wget (= 1.0.0)
   zsh (= 1.0.0)
 

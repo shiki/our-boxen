@@ -18,9 +18,7 @@ class fufulabs {
   include sublime_text_2
   include keepassx
   include alfred
-
-  #include transmission
-  #include handbrake
+  include caffeine
 
   package { 'SourceTree':
     provider => 'appdmg',
