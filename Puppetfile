@@ -34,8 +34,10 @@ github "sudo",     "1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "osx", "1.0.0"
 github "java", "1.0.6"
 github "wget", "1.0.0"
+github "zsh", "1.0.0"
 
 github "dropbox", "1.1.0"
 github "firefox", "1.0.3"
@@ -51,8 +53,13 @@ github "macvim", "1.0.0"
 github "keepassx", "1.0.0"
 github "alfred", "1.0.1"
 
-#github "transmission", "1.0.0"
-#github "handbrake", "1.0.0"
+github "nginx", "1.1.0"
+github "memcached", "1.2.0"
+github "redis", "1.0.0"
+github "mysql", "1.0.0"
+
+github "transmission", "1.0.0"
+github "handbrake", "1.0.0"
 
 
 

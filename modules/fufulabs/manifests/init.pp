@@ -2,6 +2,7 @@
 class fufulabs {
   include java
   include wget
+  include zsh
 
   include dropbox
   include firefox

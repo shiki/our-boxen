@@ -54,6 +54,11 @@ GITHUBTARBALL
     git (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-handbrake
+  specs:
+    handbrake (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.1.2)
@@ -84,6 +89,16 @@ GITHUBTARBALL
     macvim (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-memcached
+  specs:
+    memcached (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.1.0)
@@ -97,6 +112,16 @@ GITHUBTARBALL
   remote: boxen/puppet-nvm
   specs:
     nvm (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-ruby
@@ -119,6 +144,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-transmission
+  specs:
+    transmission (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
     virtualbox (1.0.1)
@@ -127,6 +157,11 @@ GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-zsh
+  specs:
+    zsh (1.0.0)
 
 GITHUBTARBALL
   remote: cprice-puppet/puppetlabs-inifile
@@ -150,6 +185,7 @@ DEPENDENCIES
   fluid (= 1.0.0)
   gcc (= 1.0.0)
   git (= 1.0.0)
+  handbrake (= 1.0.0)
   homebrew (= 1.1.2)
   hub (= 1.0.0)
   inifile (= 0.9.0)
@@ -157,14 +193,21 @@ DEPENDENCIES
   java (= 1.0.6)
   keepassx (= 1.0.0)
   macvim (= 1.0.0)
+  memcached (= 1.2.0)
+  mysql (= 1.0.0)
+  nginx (= 1.1.0)
   nginx (= 1.1.0)
   nodejs (= 1.0.0)
   nvm (= 1.0.0)
+  osx (= 1.0.0)
+  redis (= 1.0.0)
   ruby (= 3.1.0)
   slate (= 1.0.0)
   stdlib (= 3.0.0)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
+  transmission (= 1.0.0)
   virtualbox (= 1.0.1)
   wget (= 1.0.0)
+  zsh (= 1.0.0)
 
