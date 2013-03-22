@@ -1,5 +1,6 @@
 
 class fufulabs {
+  include xquartz
   include java
   include wget
   include zsh
@@ -19,6 +20,7 @@ class fufulabs {
   include keepassx
   include alfred
   include caffeine
+  include mou
 
   package { 'SourceTree':
     provider => 'appdmg',
@@ -40,4 +42,6 @@ class fufulabs {
     provider => 'compressed_app',
     source   => 'http://theunarchiver.googlecode.com/files/TheUnarchiver3.6.1.zip'
   }
+
+  package { 'tree': }
 }

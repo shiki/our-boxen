@@ -44,4 +44,11 @@ class fufulabs_web {
     provider => homebrew,
     require => Package['php54']
   }
+
+  package { [
+      'gpg',
+      'ctags',
+      'ec2-api-tools'
+    ]: 
+  }
 }

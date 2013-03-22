@@ -1,9 +1,4 @@
 GITHUBTARBALL
-  remote: Gagnavarslan/puppet-xquartz
-  specs:
-    xquartz (1.1.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
     alfred (1.0.1)
@@ -114,6 +109,11 @@ GITHUBTARBALL
     memcached (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mou
+  specs:
+    mou (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-mysql
   specs:
     mysql (1.0.0)
@@ -184,6 +184,11 @@ GITHUBTARBALL
     wget (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-xquartz
+  specs:
+    xquartz (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
@@ -228,6 +233,7 @@ DEPENDENCIES
   keepassx (= 1.0.0)
   macvim (= 1.0.0)
   memcached (= 1.2.0)
+  mou (= 1.0.0)
   mysql (= 1.0.0)
   nginx (= 1.1.0)
   nginx (= 1.1.0)
@@ -244,6 +250,6 @@ DEPENDENCIES
   virtualbox (= 1.0.1)
   vlc (= 1.0.0)
   wget (= 1.0.0)
-  xquartz (= 1.1.0)
+  xquartz (= 1.0.0)
   zsh (= 1.0.0)
 
