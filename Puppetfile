@@ -60,6 +60,7 @@ github "redis", "1.0.0"
 github "mysql", "1.0.0"
 github "heroku", "1.0.0"
 github "beanstalk", "1.0.0", :repo => "mattheath/puppet-beanstalk"
+github "xquartz", "1.1.0", :repo => "Gagnavarslan/puppet-xquartz"
 
 github "transmission", "1.0.0"
 github "handbrake", "1.0.0"
