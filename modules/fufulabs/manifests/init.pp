@@ -1,5 +1,7 @@
 
 class fufulabs {
+  require ruby::2_0_0
+
   include xquartz
   include java
   include wget
@@ -44,4 +46,7 @@ class fufulabs {
   }
 
   package { 'tree': }
+
+  # Set default version for Ruby
+  class { 'ruby::global': version => '2.0.0' }
 }

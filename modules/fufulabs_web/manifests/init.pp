@@ -45,10 +45,18 @@ class fufulabs_web {
     require => Package['php54']
   }
 
+  package { 'imagemagick': }
+
   package { [
-      'gpg',
       'ctags',
       'ec2-api-tools'
-    ]: 
+    ]:
+    provider => homebrew
+  }
+
+  # Because `package` always fails in succeeding calls
+  exec { 'install-gpg':
+    command => 'brew install gpg',
+    returns => [0, 1]
   }
 }
