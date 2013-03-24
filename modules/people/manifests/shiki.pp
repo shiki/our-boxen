@@ -8,6 +8,5 @@ class people::shiki {
   include transmission
   include handbrake
   #include vlc
-  include flux
 }
 

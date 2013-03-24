@@ -23,6 +23,7 @@ class fufulabs {
   include alfred
   include caffeine
   include mou
+  include flux
 
   package { 'SourceTree':
     provider => 'appdmg',
@@ -43,6 +44,11 @@ class fufulabs {
   package { 'Unarchiver': 
     provider => 'compressed_app',
     source   => 'http://theunarchiver.googlecode.com/files/TheUnarchiver3.6.1.zip'
+  }
+
+  package { 'Eggscellent': 
+    provider => 'compressed_app',
+    source => 'https://s3.amazonaws.com/eggscellent/betas/Eggscellent_Beta2.zip'
   }
 
   package { 'tree': }
