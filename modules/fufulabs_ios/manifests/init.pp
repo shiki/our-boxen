@@ -10,4 +10,9 @@ class fufulabs_ios {
   #  gem => 'cocoapods',
   #  ruby => '2.0.0'
   #}
+
+  package { 'crashlytics': 
+    provider => 'compressed_app',
+    source => 'https://ssl-download-crashlytics-com.s3.amazonaws.com/mac/builds/Crashlytics-latest.zip'
+  }
 }
