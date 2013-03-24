@@ -59,4 +59,24 @@ class fufulabs_web {
     command => 'brew install gpg',
     returns => [0, 1]
   }
+
+  ruby::gem { 'capistrano for 2.0.0':
+    gem => 'capistrano',
+    ruby => '2.0.0'
+  }
+
+  ruby::gem { 'knife-solo for 2.0.0':
+    gem => 'knife-solo',
+    ruby => '2.0.0'
+  }
+
+  ruby::gem { 'railsless-deploy for 2.0.0':
+    gem => 'railsless-deploy',
+    ruby => '2.0.0'
+  }
+
+  ruby::gem { 'trollop for 2.0.0': 
+    gem => 'trollop',
+    ruby => '2.0.0'
+  }
 }
