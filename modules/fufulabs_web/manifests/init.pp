@@ -56,6 +56,43 @@ class fufulabs_web {
     require => Package['qcachegrind']
   }
 
+  # PEAR packages
+  #################################################################################################
+
+  exec { 'pear-auto-discover':
+    command => 'pear config-set auto_discover 1',
+    require => Package['php54']
+  }
+
+  exec { 'pear-install-system-daemon': 
+    command => 'pear install System_Daemon',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/System/Daemon.php',
+    require => Exec['pear-auto-discover']
+  }
+
+  exec { 'pear-install-code-sniffer':
+    command => 'pear install PHP_CodeSniffer',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHP/CodeSniffer.php',
+    require => Exec['pear-auto-discover']
+  }
+
+  exec { 'pear-discover-phpunit': 
+    command => 'pear channel-discover pear.phpunit.de',
+    require => Exec['pear-auto-discover'],
+    returns => [0, 1]
+  }
+
+  exec { 'pear-install-phpunit':
+    command => 'pear install pear.phpunit.de/PHPUnit pear.phpunit.de/PHPUnit_Selenium phpunit/DbUnit',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Autoload.php',
+    require => Exec['pear-discover-phpunit']
+  }
+
+  exec { 'pear-install-apigen':
+    command => 'pear install pear.apigen.org/apigen',
+    require => Exec['pear-auto-discover']
+  }
+
   # Others
   #################################################################################################
 
