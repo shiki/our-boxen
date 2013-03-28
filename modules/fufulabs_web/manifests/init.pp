@@ -15,7 +15,11 @@ class fufulabs_web {
     source => 'http://sequel-pro.googlecode.com/files/sequel-pro-1.0.1.dmg'
   }
 
+  # PHP
+  #################################################################################################
+
   package { 'graphicsmagick': }
+  package { 'imagemagick': }
 
   exec { 'tap-homebrew-dupes':
     command => "brew tap homebrew/dupes",
@@ -39,13 +43,21 @@ class fufulabs_web {
       'php54-memcached',
       'php54-apc',
       'php54-geoip',
-      'php54-xdebug'
+      'php54-xdebug',
+      'php54-mcrypt'
     ]:
     provider => homebrew,
     require => Package['php54']
   }
 
-  package { 'imagemagick': }
+  package { 'qcachegrind': }
+  exec { 'link-qcachegrind': 
+    command => 'brew linkapps',
+    require => Package['qcachegrind']
+  }
+
+  # Others
+  #################################################################################################
 
   package { [
       'ctags',
@@ -54,11 +66,14 @@ class fufulabs_web {
     provider => homebrew
   }
 
-  # Because `package` always fails in succeeding calls
+  # Because `package` always fails in succeeding calls even if it was installed
   exec { 'install-gpg':
     command => 'brew install gpg',
     returns => [0, 1]
   }
+
+  # Ruby gems
+  #################################################################################################
 
   ruby::gem { 'capistrano for 2.0.0':
     gem => 'capistrano',
