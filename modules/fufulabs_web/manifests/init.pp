@@ -3,6 +3,7 @@
 
 class fufulabs_web {
   require homebrew
+  require fufulabs
 
   include nginx
   include memcached
@@ -90,6 +91,7 @@ class fufulabs_web {
 
   exec { 'pear-install-apigen':
     command => 'pear install pear.apigen.org/apigen',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/ApiGen/Config.php',
     require => Exec['pear-auto-discover']
   }
 

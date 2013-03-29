@@ -1,6 +1,7 @@
 
 class fufulabs {
   require ruby::2_0_0
+  require nodejs::0-10
 
   include xquartz
   include java
