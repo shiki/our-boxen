@@ -83,10 +83,31 @@ class fufulabs_web {
     returns => [0, 1]
   }
 
+  # PHP Unit packages
   exec { 'pear-install-phpunit':
-    command => 'pear install pear.phpunit.de/PHPUnit pear.phpunit.de/PHPUnit_Selenium phpunit/DbUnit',
+    command => 'pear install pear.phpunit.de/PHPUnit',
     creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Autoload.php',
     require => Exec['pear-discover-phpunit']
+  }
+  exec { 'pear-install-phpunit-selenium':
+    command => 'pear install pear.phpunit.de/PHPUnit_Selenium',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/SeleniumTestSuite.php',
+    require => Exec['pear-install-phpunit']
+  }
+  exec { 'pear-install-phpunit-dbunit':
+    command => 'pear install phpunit/DbUnit',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/Database/Autoload.php',
+    require => Exec['pear-install-phpunit']
+  }
+  exec { 'pear-install-phpunit-story':
+    command => 'pear install phpunit/PHPUnit_Story',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/Story/Autoload.php',
+    require => Exec['pear-install-phpunit']
+  }
+  exec { 'pear-install-phpunit-invoker':
+    command => 'pear install phpunit/PHP_Invoker',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHP/Invoker.php',
+    require => Exec['pear-install-phpunit']
   }
 
   exec { 'pear-install-apigen':
