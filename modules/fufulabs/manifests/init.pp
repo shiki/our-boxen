@@ -25,6 +25,7 @@ class fufulabs {
   include caffeine
   include mou
   include flux
+  include adium
 
   package { 'SourceTree':
     provider => 'appdmg',
