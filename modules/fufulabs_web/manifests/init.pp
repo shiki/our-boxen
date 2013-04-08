@@ -16,6 +16,11 @@ class fufulabs_web {
     source => 'http://sequel-pro.googlecode.com/files/sequel-pro-1.0.1.dmg'
   }
 
+  package { 'MySQL Workbench':
+    provider => 'appdmg',
+    source => 'http://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-gpl-5.2.47-osx-i686.dmg'
+  }
+
   # PHP
   #################################################################################################
 
