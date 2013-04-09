@@ -4,6 +4,7 @@ class people::shiki {
 
   include fufulabs_web
   include fufulabs_ios
+  include fufulabs_gamedev
 
   include transmission
   include handbrake
