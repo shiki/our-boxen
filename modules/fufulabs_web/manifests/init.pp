@@ -26,6 +26,7 @@ class fufulabs_web {
 
   package { 'graphicsmagick': }
   package { 'imagemagick': }
+  package { 'josegonzalez/php/composer': }
 
   exec { 'tap-homebrew-dupes':
     command => "brew tap homebrew/dupes",
