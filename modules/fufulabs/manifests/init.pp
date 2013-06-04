@@ -9,6 +9,7 @@ class fufulabs {
   include zsh
 
   include dropbox
+  include googledrive
   include firefox
   include cyberduck
   include appcleaner

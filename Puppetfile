@@ -40,6 +40,7 @@ github "wget", "1.0.0"
 github "zsh", "1.0.0"
 
 github "dropbox", "1.1.0"
+github "googledrive", "1.0.2"
 github "firefox", "1.0.3"
 github "cyberduck", "1.0.0"
 github "appcleaner", "1.0.0"

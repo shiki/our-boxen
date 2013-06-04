@@ -69,6 +69,11 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-googledrive
+  specs:
+    googledrive (1.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-handbrake
   specs:
     handbrake (1.0.0)
@@ -229,6 +234,7 @@ DEPENDENCIES
   flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  googledrive (= 1.0.2)
   handbrake (= 1.0.0)
   heroku (= 1.0.0)
   homebrew (= 1.1.2)
