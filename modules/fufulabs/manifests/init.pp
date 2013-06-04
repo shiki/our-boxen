@@ -1,7 +1,7 @@
 
 class fufulabs {
   require ruby::2_0_0
-  require nodejs::v0_10
+  require nodejs::v0_10_7
 
   include xquartz
   include java
@@ -57,4 +57,7 @@ class fufulabs {
 
   # Set default version for Ruby
   class { 'ruby::global': version => '2.0.0' }
+
+  # Set default version for Nodejs
+  class { 'nodejs::global': version => 'v0.10.7' }
 }
