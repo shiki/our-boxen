@@ -160,4 +160,17 @@ class fufulabs_web {
     gem => 'trollop',
     ruby => '2.0.0'
   }
+
+  # Node packages
+  ##################################################################################################
+
+  nodejs::module { 'coffee-script':
+    node_version => 'v0.10.7'
+  }
+  nodejs::module { 'less':
+    node_version => 'v0.10.7'
+  }
+  nodejs::module { 'grunt-cli':
+    node_version => 'v0.10.7'
+  }
 }
