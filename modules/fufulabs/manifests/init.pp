@@ -54,6 +54,11 @@ class fufulabs {
     source => 'https://s3.amazonaws.com/eggscellent/betas/Eggscellent_Beta2.zip'
   }
 
+  package { 'Droplr':
+    provider => 'compressed_app',
+    source => 'http://files.droplr.com.s3.amazonaws.com/apps/mac/Droplr+3.0.5.zip'
+  }
+
   package { 'tree': }
 
   # Set default version for Ruby
