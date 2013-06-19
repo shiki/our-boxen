@@ -66,20 +66,27 @@ class fufulabs_web {
   # PEAR packages
   #################################################################################################
 
+  # Important: This will break if PHP gets upgraded to a higher version.
+  # https://github.com/sebastianbergmann/phpunit/issues/396#issuecomment-10406542
+  exec { 'fix-pear-for-homebrew':
+    command => 'chmod -R ug+w /opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php && pear config-set php_ini /opt/boxen/homebrew/etc/php/5.4/php.ini',
+    require => Package['php54']
+  }
+
   exec { 'pear-auto-discover':
     command => 'pear config-set auto_discover 1',
-    require => Package['php54']
+    require => Exec['fix-pear-for-homebrew']
   }
 
   exec { 'pear-install-system-daemon': 
     command => 'pear install System_Daemon',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/System/Daemon.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/System/Daemon.php',
     require => Exec['pear-auto-discover']
   }
 
   exec { 'pear-install-code-sniffer':
     command => 'pear install PHP_CodeSniffer',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHP/CodeSniffer.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHP/CodeSniffer.php',
     require => Exec['pear-auto-discover']
   }
 
@@ -92,33 +99,33 @@ class fufulabs_web {
   # PHP Unit packages
   exec { 'pear-install-phpunit':
     command => 'pear install pear.phpunit.de/PHPUnit',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Autoload.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHPUnit/Autoload.php',
     require => Exec['pear-discover-phpunit']
   }
   exec { 'pear-install-phpunit-selenium':
     command => 'pear install pear.phpunit.de/PHPUnit_Selenium',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/SeleniumTestSuite.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHPUnit/Extensions/SeleniumTestSuite.php',
     require => Exec['pear-install-phpunit']
   }
   exec { 'pear-install-phpunit-dbunit':
     command => 'pear install phpunit/DbUnit',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/Database/Autoload.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHPUnit/Extensions/Database/Autoload.php',
     require => Exec['pear-install-phpunit']
   }
   exec { 'pear-install-phpunit-story':
     command => 'pear install phpunit/PHPUnit_Story',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHPUnit/Extensions/Story/Autoload.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHPUnit/Extensions/Story/Autoload.php',
     require => Exec['pear-install-phpunit']
   }
   exec { 'pear-install-phpunit-invoker':
     command => 'pear install phpunit/PHP_Invoker',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/PHP/Invoker.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/PHP/Invoker.php',
     require => Exec['pear-install-phpunit']
   }
 
   exec { 'pear-install-apigen':
     command => 'pear install pear.apigen.org/apigen',
-    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.12/lib/php/ApiGen/Config.php',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/ApiGen/Config.php',
     require => Exec['pear-auto-discover']
   }
 
@@ -127,7 +134,8 @@ class fufulabs_web {
 
   package { [
       'ctags',
-      'ec2-api-tools'
+      'ec2-api-tools',
+      'nmap'
     ]:
     provider => homebrew
   }
