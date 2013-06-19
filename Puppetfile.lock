@@ -131,7 +131,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.1.0)
+    nginx (1.4.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -247,8 +247,7 @@ DEPENDENCIES
   memcached (= 1.2.0)
   mou (= 1.0.0)
   mysql (= 1.0.0)
-  nginx (= 1.1.0)
-  nginx (= 1.1.0)
+  nginx (= 1.4.2)
   nodejs (= 3.2.3)
   osx (= 1.0.0)
   redis (= 1.0.0)
