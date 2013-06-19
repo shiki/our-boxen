@@ -10,6 +10,7 @@ class fufulabs_web {
   include redis
   include mysql
   include beanstalk
+  include vagrant
 
   package { 'Sequel_Pro':
     provider => 'appdmg',
