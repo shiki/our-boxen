@@ -170,6 +170,16 @@ class fufulabs_web {
     ruby => '2.0.0'
   }
 
+  ruby::gem { 'jekyll for 2.0.0': 
+    gem => 'jekyll',
+    ruby => '2.0.0'
+  }
+
+  ruby::gem { 'rdiscount for 2.0.0': 
+    gem => 'rdiscount',
+    ruby => '2.0.0'
+  }
+
   # Node packages
   ##################################################################################################
 
