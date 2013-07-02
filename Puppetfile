@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.1.0"
+github "boxen", "2.3.5"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -56,6 +56,7 @@ github "alfred", "1.0.1"
 github "caffeine", "1.0.0"
 github "mou", "1.0.0"
 github "adium", "1.0.1"
+github "evernote", "2.0.3", :repo => "jasonamyers/puppet-evernote"
 
 github "memcached", "1.2.0"
 github "redis", "1.0.0"

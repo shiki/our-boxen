@@ -6,6 +6,8 @@ class people::shiki {
   include fufulabs_ios
   include fufulabs_gamedev
 
+  include evernote
+
   include transmission
   include handbrake
   #include vlc

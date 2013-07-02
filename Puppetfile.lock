@@ -16,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (2.1.0)
+    boxen (2.3.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -214,6 +214,11 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: jasonamyers/puppet-evernote
+  specs:
+    evernote (2.0.3)
+
+GITHUBTARBALL
   remote: mattheath/puppet-beanstalk
   specs:
     beanstalk (1.0.0)
@@ -228,12 +233,13 @@ DEPENDENCIES
   alfred (= 1.0.1)
   appcleaner (= 1.0.0)
   beanstalk (= 1.0.0)
-  boxen (= 2.1.0)
+  boxen (= 2.3.5)
   caffeine (= 1.0.0)
   chrome (= 1.1.0)
   cyberduck (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
+  evernote (= 2.0.3)
   firefox (= 1.0.3)
   fluid (= 1.0.0)
   flux (= 0.0.1)
