@@ -7,6 +7,7 @@ class people::shiki {
   include fufulabs_gamedev
 
   include evernote
+  include libreoffice
 
   include transmission
   include handbrake
