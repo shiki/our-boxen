@@ -49,11 +49,6 @@ class fufulabs {
     source   => 'http://theunarchiver.googlecode.com/files/TheUnarchiver3.6.1.zip'
   }
 
-  package { 'Eggscellent': 
-    provider => 'compressed_app',
-    source => 'https://s3.amazonaws.com/eggscellent/betas/Eggscellent_Beta2.zip'
-  }
-
   package { 'Droplr':
     provider => 'compressed_app',
     source => 'http://files.droplr.com.s3.amazonaws.com/apps/mac/Droplr+3.0.5.zip'
