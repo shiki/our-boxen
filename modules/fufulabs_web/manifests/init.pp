@@ -136,7 +136,8 @@ class fufulabs_web {
   package { [
       'ctags',
       'ec2-api-tools',
-      'nmap'
+      'nmap',
+      'lftp'
     ]:
     provider => homebrew
   }
