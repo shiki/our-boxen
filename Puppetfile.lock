@@ -179,6 +179,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-textual
+  specs:
+    textual (3.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-transmission
   specs:
     transmission (1.0.0)
@@ -274,6 +279,7 @@ DEPENDENCIES
   stdlib (= 4.0.2)
   sublime_text_2 (= 1.1.0)
   sudo (= 1.0.0)
+  textual (= 3.1.0)
   transmission (= 1.0.0)
   vagrant (= 2.0.7)
   virtualbox (= 1.0.1)

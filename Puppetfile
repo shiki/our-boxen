@@ -56,6 +56,7 @@ github "alfred", "1.0.1"
 github "caffeine", "1.0.0"
 github "mou", "1.0.0"
 github "adium", "1.0.1"
+github "textual", "3.1.0"
 
 github "memcached", "1.2.0"
 github "redis", "1.0.0"

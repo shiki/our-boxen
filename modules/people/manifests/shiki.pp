@@ -6,6 +6,7 @@ class people::shiki {
   include fufulabs_ios
   include fufulabs_gamedev
 
+  include textual
   include evernote
   include libreoffice
 
