@@ -4,7 +4,8 @@
 class fufulabs_web {
   require homebrew
   require fufulabs
-
+ 
+  include python
   include nginx
   include memcached
   include redis

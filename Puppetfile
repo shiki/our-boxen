@@ -36,6 +36,7 @@ github "sudo",       "1.0.0"
 
 github "osx", "1.0.0"
 github "java", "1.0.6"
+github "python", "1.2.1"
 github "wget", "1.0.0"
 github "zsh", "1.0.0"
 
