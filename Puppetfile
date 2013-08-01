@@ -60,7 +60,7 @@ github "textual", "3.1.0"
 
 github "memcached", "1.2.0"
 github "redis", "1.0.0"
-github "mysql", "1.0.0"
+github "mysql", "1.1.3"
 github "heroku", "1.0.0"
 github "beanstalk", "1.0.0", :repo => "mattheath/puppet-beanstalk"
 github "xquartz", "1.0.0"
