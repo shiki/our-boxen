@@ -138,7 +138,8 @@ class fufulabs_web {
       'ctags',
       'ec2-api-tools',
       'nmap',
-      'lftp'
+      'lftp',
+      'ssh-copy-id'
     ]:
     provider => homebrew
   }
