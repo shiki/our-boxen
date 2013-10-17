@@ -124,6 +124,11 @@ GITHUBTARBALL
     memcached (1.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mongodb
+  specs:
+    mongodb (1.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-mou
   specs:
     mou (1.0.0)
@@ -272,6 +277,7 @@ DEPENDENCIES
   libreoffice (= 4.0.4)
   macvim (= 1.0.0)
   memcached (= 1.2.0)
+  mongodb (= 1.0.4)
   mou (= 1.0.0)
   mysql (= 1.1.3)
   nginx (= 1.4.2)

@@ -12,6 +12,7 @@ class fufulabs_web {
   include mysql
   include beanstalk
   include vagrant
+  include mongodb
 
   package { 'Sequel_Pro':
     provider => 'appdmg',
@@ -53,7 +54,8 @@ class fufulabs_web {
       'php54-apc',
       'php54-geoip',
       'php54-xdebug',
-      'php54-mcrypt'
+      'php54-mcrypt',
+      'php54-mongo'
     ]:
     provider => homebrew,
     require => Package['php54']
@@ -129,6 +131,12 @@ class fufulabs_web {
     command => 'pear install pear.apigen.org/apigen',
     creates => '/opt/boxen/homebrew/Cellar/php54/5.4.15/lib/php/ApiGen/Config.php',
     require => Exec['pear-auto-discover']
+  }
+
+  exec { 'pecl-install-xhprof':
+    command => 'pecl install xhprof-beta',
+    creates => '/opt/boxen/homebrew/Cellar/php54/5.4.20/lib/php/extensions/no-debug-non-zts-20100525/xhprof.so',
+    require => Exec['fix-pear-for-homebrew']
   }
 
   # Others

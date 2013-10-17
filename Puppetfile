@@ -66,6 +66,7 @@ github "heroku", "1.0.0"
 github "beanstalk", "1.0.0", :repo => "mattheath/puppet-beanstalk"
 github "xquartz", "1.0.0"
 github "vagrant", "2.0.7"
+github "mongodb", "1.0.4"
 
 github "evernote", "2.0.3", :repo => "jasonamyers/puppet-evernote"
 github "libreoffice", "4.0.4"
